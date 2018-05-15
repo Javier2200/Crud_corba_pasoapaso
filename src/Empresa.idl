@@ -1,0 +1,10 @@
+module EmpresaApp{
+    interface Empresa{
+        boolean insertarEmpresa(in long nit, in wstring razon_social, in wstring direccion, in wstring telefono);
+        wstring consultarEmpresa(in long nit);
+        boolean eliminarEmpresa(in long nit);
+        boolean actualizarEmpresa(in long nit, in wstring razon_social, in wstring direccion, in wstring telefono);
+        wstring listarEmpresa();
+        oneway void shutdown();
+    };
+};
